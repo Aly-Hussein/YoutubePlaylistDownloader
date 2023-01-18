@@ -1,17 +1,6 @@
 import argparse
 import youtube_dl
 
-# Quran playlist I use 
-# https://www.youtube.com/playlist?list=PL96519CC4BF5DD993
-
-# To run script in background 
-# nohup python3 quran_downloader.py url 
-
-# then add --items 1 2 4 (if you want to download vids 1 2 and 4 only)
-# then add --range 5 7 (if you want to download all vids from 5 till 7 inclusivly)
-
-# tail -f nohup.out (to see the output of the background process) 
-
 # Parse the command-line arguments
 parser = argparse.ArgumentParser()
 parser.add_argument('url', help='The URL of the YouTube playlist')
